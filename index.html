@@ -12,3 +12,11 @@ javascript:(function() {
         var wordsArray = txt.trim().split(/\s+/);
         alert(wordsArray.length);
     }
+    else if (Choice_str == "3") {
+        var linkElements = document.getElementsByTagName('a');
+        for (let i = 0; i < linkElements.length; i++) {
+            linkElements[i].style.background = "yellow";
+            linkElements[i].style.color = "#000";
+        }
+        alert('Done');
+    }
