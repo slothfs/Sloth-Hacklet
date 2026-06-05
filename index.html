@@ -1,0 +1,14 @@
+javascript:(function() {
+    var Choice_str = prompt('1.Dark Mode\n2.Word Count\n3.Highlight Links\n4.Bigger Text\n5.Page Info');
+
+    if (Choice_str == null || Choice_str == "") { return; }
+
+    if (Choice_str == "1") {
+        document.body.style.filter = "invert(1) hue-rotate(180deg)";
+        alert("Done");
+    }
+    else if (Choice_str == "2") {
+        let txt = document.body.innerText;
+        var wordsArray = txt.trim().split(/\s+/);
+        alert(wordsArray.length);
+    }
